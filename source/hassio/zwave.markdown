@@ -42,6 +42,16 @@ zha:
   database_path: /config/zigbee.db
 ```
 
+### {% linkable_title INTEL NUC %}
+
+If you have INTEL NUC and host Ubuntu, on some system's the Z-Wave Aeotec stick is not starting up correctly - no Z-Wave nodes on Home Assistant start. Then you have to disable ModemManager in Ubuntu:
+
+```bash
+ubuntu$ hassio hardware info
+```
+
+
+
 ### {% linkable_title Finding the path %}
 
 If the above defaults don't work, you can check what hardware has been found using the [`hassio` command](/hassio/commandline/#hardware):
